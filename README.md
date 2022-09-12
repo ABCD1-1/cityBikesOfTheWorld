@@ -1,7 +1,8 @@
 # cityBikesOfTheWorld
 
 0. Create a folder named config, and add a .env file inside this folder.
-This .env file should have a line that specifies the PORT
+This .env file should have a line that specifies the PORT.
+
 For example:
 PORT=5000
 
