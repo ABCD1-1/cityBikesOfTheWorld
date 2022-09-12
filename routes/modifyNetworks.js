@@ -37,7 +37,7 @@ module.exports = (app) => {
           "Error, the payload need to contain at least one of these properties : name, company, city, country, and the associated modfification newName, newCompany, newCity, newCountry";
         return res.json({ message });
       }
-      console.log(acceptedProperties);
+      //console.log(acceptedProperties);
       networks.map((network) => {
         if (network.location) {
           const location = network.location;
@@ -53,12 +53,12 @@ module.exports = (app) => {
           reqBody,
           reqBody[properties[1]]
         );
-        console.log(
-          properties[0],
-          properties[1],
-          reqBody[properties[0]],
-          reqBody[properties[1]]
-        );
+        //console.log(
+        //  properties[0],
+        //  properties[1],
+        //  reqBody[properties[0]],
+        //  reqBody[properties[1]]
+        //);
       });
       return res.json({ modifiedNetworks: networks });
     } else {
